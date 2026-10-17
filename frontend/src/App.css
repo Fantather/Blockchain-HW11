@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f2f5;
+  color: #222;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #d8dce2;
+  border-radius: 8px;
+  padding: 4px 16px 16px;
+  margin-bottom: 16px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input {
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid #b8bec7;
+  border-radius: 6px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #2d6cdf;
+  border-radius: 6px;
+  background: #2d6cdf;
+  color: #fff;
+}
+
+button:hover:not(:disabled) {
+  background: #1f56b8;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: #fff;
+  color: #b00020;
+  border-color: #b00020;
+}
+
+button.danger:hover:not(:disabled) {
+  background: #fdecee;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d8dce2;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 14px 16px;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #e6e9ee;
+}
+
+.card-image-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #5b6470;
+  font-size: 14px;
+}
+
+.card-name {
+  margin: 12px 0;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #5b6470;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.address {
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.status {
+  color: #2d6cdf;
+}
+
+.error {
+  color: #b00020;
+}
